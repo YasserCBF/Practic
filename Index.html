@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio Personal</title>
+    <title>Portafolio de Yasser Christian Baldeón Figueroa</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Background Elements -->
@@ -17,7 +18,10 @@
     <canvas id="snow-canvas-6"></canvas>
 
     <!-- Portfolio Content -->
-    <nav>
+    <nav class="navbar">
+        <div class="nav-brand">
+           
+        </div>
         <ul>
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#sobre-mi">Sobre Mí</a></li>
@@ -32,8 +36,12 @@
             <div class="profile-image">
                 <img src="data:image/jpeg;base64,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" alt="Imagen de perfil">
             </div>
-            <p>Soy Yasser Christian Baldeón Figueroa, un apasionado desarrollador de software. Explora mi trabajo y contáctame.</p>
-            
+            <p class="name">Yasser Christian Baldeón Figueroa</p>
+            <p class="tagline">Desarrollador de Software | Especialista en Innovación</p>
+            <div class="social-links">
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/YasserCBF" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
         </div>
     </section>
 
@@ -41,12 +49,22 @@
         <div class="contenedor">
             <h2>Sobre Mí</h2>
             <p>Soy un desarrollador de software con experiencia en Python, React.js, TypeScript, y tecnologías web como HTML, CSS, y JavaScript. También tengo conocimientos en IoT y electrónica básica. Me apasiona crear soluciones innovadoras y optimizadas.</p>
-            <p>Algunas de mis habilidades incluyen:</p>
-            <ul>
-                <li>Programación en Python para análisis de datos</li>
-                <li>Desarrollo web con React.js y TypeScript</li>
-                <li>Diseño de interfaces con Tailwind CSS</li>
-            </ul>
+            <h3>Mis Habilidades</h3>
+            <div class="skills">
+                <div class="skill">
+                    <span>Python</span>
+                    <div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div>
+                </div>
+                <div class="skill">
+                    <span>React.js & TypeScript</span>
+                    <div class="skill-bar"><div class="skill-level" style="width: 85%;"></div></div>
+                </div>
+                <div class="skill">
+                    <span>Tailwind CSS</span>
+                    <div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div>
+                </div>
+            </div>
+    
         </div>
     </section>
 
@@ -55,18 +73,18 @@
             <h2>Mis Proyectos</h2>
             <div class="tarjeta-proyecto">
                 <h3>Análisis de Datos con Python</h3>
-                <p>Desarrollé un script en Python utilizando las librerías pandas y matplotlib para analizar un conjunto de datos de ventas. El programa limpia los datos, realiza cálculos estadísticos como promedios y tendencias, y genera visualizaciones interactivas como gráficos de líneas y barras. Implementé manejo de errores y optimicé el código para manejar grandes volúmenes de datos de manera eficiente.</p>
-             
-            </div>
-            <div class="tarjeta-proyecto">
-                <h3>Dashboard Educativo en React.js</h3>
-                <p>Construí una aplicación web usando React.js, TypeScript y Tailwind CSS, basada en un prototipo de dashboard educativo con tema de bosque nevado. Incluye pantallas como Login Docente, Pantalla Principal y Registro de Alumnos, con navegación mediante React Router. Los componentes están organizados modularmente, y el diseño utiliza estilos responsivos para una experiencia visual atractiva.</p>
-             
-            </div>
-            <div class="tarjeta-proyecto">
-                <h3>Cuestionario de IoT y Electrónica</h3>
-                <p>Diseñé un conjunto de preguntas tipo quiz sobre Internet of Things (IoT) y electrónica básica, demostrando conocimientos en programación para plataformas como Arduino. Las preguntas cubren conceptos como señales analógicas y digitales, uso de multímetros, y desarrollo en entornos IoT, reflejando mi comprensión de tecnologías emergentes.</p>
+                <p>Desarrollé un script en Python utilizando las librerías pandas y matplotlib para analizar un conjunto de datos de ventas. El programa limpia los datos, realiza cálculos estadísticos como promedios y tendencias, y genera visualizaciones interactivas como gráficos de líneas y barras.</p>
               
+            </div>
+            <div class="tarjeta-proyecto">
+
+                <h3>Dashboard Educativo en React.js</h3>
+                <p>Construí una aplicación web usando React.js, TypeScript y Tailwind CSS, basada en un prototipo de dashboard educativo con tema de bosque nevado. Incluye pantallas como Login Docente, Pantalla Principal y Registro de Alumnos.</p>
+            </div>
+            <div class="tarjeta-proyecto">
+ 
+                <h3>Cuestionario de IoT y Electrónica</h3>
+                <p>Diseñé un conjunto de preguntas tipo quiz sobre Internet of Things (IoT) y electrónica básica, demostrando conocimientos en programación para plataformas como Arduino.</p>
             </div>
         </div>
     </section>
@@ -78,7 +96,7 @@
                 <input type="text" id="nombre" placeholder="Nombre" required>
                 <input type="email" id="email" placeholder="Email" required>
                 <textarea id="mensaje" placeholder="Mensaje" rows="5" required></textarea>
-                <button onclick="enviarMensaje()">Enviar</button>
+                <button onclick="enviarMensaje()">Enviar <i class="fas fa-paper-plane"></i></button>
             </div>
             <div class="whatsapp-contact">
                 <p>O contáctame directamente por WhatsApp:</p>
@@ -89,6 +107,14 @@
             </div>
         </div>
     </section>
+
+    <footer>
+        <p>&copy; 2025 Yasser Christian Baldeón Figueroa. Todos los derechos reservados.</p>
+        <div class="footer-social">
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>

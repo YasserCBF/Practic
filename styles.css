@@ -237,7 +237,7 @@ p, li, a {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    background: rgba(37, 211, 102, 0.9); /* WhatsApp green with slight transparency */
+    background: rgba(37, 211, 102, 0.9);
     color: white;
     padding: 0.75rem 1.5rem;
     border-radius: 6px;
@@ -254,6 +254,19 @@ p, li, a {
 .whatsapp-link:hover {
     background: rgba(37, 211, 102, 1);
     transform: scale(1.05);
+}
+
+.profile-image {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.profile-image img {
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: 50%; /* Circular image for a profile picture */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    border: 3px solid #ffffff; /* White border to make it pop against the background */
 }
 
 @media (max-width: 768px) {
@@ -279,5 +292,9 @@ p, li, a {
 
     p, li, a {
         font-size: 1rem;
+    }
+
+    .profile-image img {
+        max-height: 200px;
     }
 }
