@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+nav {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-direction: row; /* Ensure horizontal layout */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #3498db;
+}
+
+section {
+    min-height: 100vh;
+    padding: 5rem 2rem;
+    scroll-margin-top: 70px;
+}
+
+#inicio {
+    background: #ecf0f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#sobre-mi {
+    background: white;
+}
+
+#proyectos {
+    background: #f9f9f9;
+}
+
+#contacto {
+    background: #ecf0f1;
+}
+
+h1, h2 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tarjeta-proyecto {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.contacto-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contacto-form input,
+.contacto-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #f5f5f5; /* Match the light gray background from the screenshot */
+}
+
+.contacto-form textarea {
+    resize: none; /* Prevent resizing of textarea */
+}
+
+.contacto-form button {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block; /* Ensure button aligns properly */
+    margin: 0.5rem 0;
+}
+
+.contacto-form button:hover {
+    background: #2980b9;
+}
+
+/* Remove the media query that forces vertical layout */
+@media (max-width: 768px) {
+    nav ul {
+        gap: 1rem; /* Reduce gap for smaller screens, but keep horizontal */
+    }
+}
